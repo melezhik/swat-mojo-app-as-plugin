@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name" : "swat-mojo-app-as-plugin",
     "description": "swat integration tests for Mojolicious, package applications as self-contained reusable plugins",
     "url" : "https://github.com/melezhik/swat-mojo-app-as-plugin"

@@ -6,7 +6,9 @@ sub register {
   my ($self, $app) = @_;
 
   # Automatically add route
+
   $app->routes->any('/hello')->detour(app => EmbeddedApp::app());
+
 }
 
 package EmbeddedApp;
@@ -14,10 +16,8 @@ use Mojolicious::Lite;
 
 get '/world' => sub {
   my $c = shift;
-  $c->render(text => 'Hello World!');
+  $c->render(text => 'Hello World!'."\n".'base path is '.($c->stash('path'))."\n");
 };
-
-
 
 package MyApp;
 
