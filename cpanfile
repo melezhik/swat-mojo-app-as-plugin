@@ -1,3 +1,2 @@
-requires 'swat';
 requires 'Mojolicious';
 
